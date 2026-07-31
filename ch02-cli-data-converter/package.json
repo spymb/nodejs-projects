@@ -1,0 +1,17 @@
+{
+  "name": "ch02-cli-data-converter",
+  "version": "1.0.0",
+  "description": "Chapter 2: CLI Data Converter — prompt user for contacts and save to CSV",
+  "type": "module",
+  "scripts": {
+    "start": "tsx index.ts",
+    "build": "tsc",
+    "typecheck": "tsc --noEmit"
+  },
+  "devDependencies": {
+    "@types/node": "^26.1.2",
+    "tsx": "^4.19.0",
+    "typescript": "^5.6.0"
+  },
+  "license": "MIT"
+}

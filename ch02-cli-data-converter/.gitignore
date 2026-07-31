@@ -1,0 +1,13 @@
+node_modules/
+dist/
+
+# 运行时生成的数据文件（包含用户联系人信息）
+contacts.csv
+
+# IDE
+.vscode/
+.idea/
+
+# OS
+.DS_Store
+Thumbs.db
