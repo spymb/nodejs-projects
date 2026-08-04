@@ -1,0 +1,18 @@
+<%- include('partials/header') %>
+
+  <main class="container">
+    <h2>我们的菜单</h2>
+    <p class="muted">所有菜品均为素食，价格单位为美元。</p>
+
+    <section class="menu-grid">
+      <% menuItems.forEach(item => { %>
+        <article class="menu-card">
+          <h3><%= item.name %></h3>
+          <p><%= item.description %></p>
+          <span class="price">$<%= item.price.toFixed(2) %></span>
+        </article>
+      <% }) %>
+    </section>
+  </main>
+
+<%- include('partials/footer') %>

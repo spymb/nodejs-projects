@@ -1,0 +1,13 @@
+node_modules/
+dist/
+
+# IDE
+.vscode/
+.idea/
+
+# OS
+.DS_Store
+Thumbs.db
+
+# 日志（fastify logger 输出）
+*.log

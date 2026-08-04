@@ -1,0 +1,25 @@
+<%- include('partials/header') %>
+
+  <main class="container">
+    <h2>营业时间</h2>
+    <p class="muted">今日：<%= todayLabel %></p>
+
+    <ul class="hours-list">
+      <% schedule.forEach(day => { %>
+        <li class="hours-row <%= day.isToday ? 'today-highlight' : '' %>">
+          <span class="day-name">
+            <%= day.name %><% if (day.isToday) { %> <em>(今日)</em><% } %>
+          </span>
+          <span class="hours-time">
+            <% if (day.isClosed) { %>
+              <strong class="closed">休息</strong>
+            <% } else { %>
+              <%= day.open %> – <%= day.close %>
+            <% } %>
+          </span>
+        </li>
+      <% }) %>
+    </ul>
+  </main>
+
+<%- include('partials/footer') %>
